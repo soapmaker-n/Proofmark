@@ -42,3 +42,16 @@ This app needs **Node.js** installed in addition to the Windows `.exe`.
 2. Extract `sidecar.zip` into the same folder as `Proofmark.exe`
 3. Install [Node.js](https://nodejs.org) if you don't have it
 4. Open a terminal in the `sidecar` folder and run:
+5. 5. Copy `env.example` to `.env` inside `sidecar`, and add:
+   - Your own wallet's private key (testnet only — get test tokens at 
+     [faucet.0g.ai](https://faucet.0g.ai))
+   - Default RPC/indexer URLs can stay as-is
+6. Run `Proofmark.exe`, write something, click **Save & Notarize on 0G**
+
+## Built with
+Python, Tkinter, Node.js, `@0gfoundation/0g-storage-ts-sdk`, ethers.js
+Coded with [0g.ai](https://0g.ai)
+
+## ⚠️ Note
+0G's testnet can occasionally be slow or briefly unavailable — if a 
+push fails, your entry is still saved locally and you can retry.
